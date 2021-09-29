@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Demo</title>
+</head>
+
+<body>
+  <h1>What Can JavaScript Do?</h1>
+  
+  <p id="demo">JavaScript can change HTML content.</p>
+  <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me To Change!</button>
+  <!--changes html content onclick-->
+
+  <p id="demo2">JavaScript can hide HTML elements.Watch this sentence disappear by clicking the button.</p>
+  <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me To Hide!</button>
+  <!--hides html content onclick-->
+
+  <p>JavaScript can show hidden HTML elements.</p>
+  <p id="demo3" style="display:none">Hello Again JavaScript!</p>
+  <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me To Show A Hidden HTML Element!</button>
+  <!--displays hidden html content onclick-->
+
+  <p>JavaScript can change paragraphs in the body.</p>
+  <p id="demo4">A Paragraph.</p>
+  <button type="button" onclick="myFunction()">Click Me To Change The Paragraph!</button>
+  <!--changes paragraph onclick-->
+  
+  <script>
+  function myFunction() {
+  document.getElementById("demo4").innerHTML = "Paragraph changed.";
+  }
+  </script>
+</body>
+</html>
