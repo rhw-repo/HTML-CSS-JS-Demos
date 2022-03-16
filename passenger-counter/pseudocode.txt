@@ -1,0 +1,11 @@
+Create a manual counter to log passengers entering a station:
+
+1.Add event listener onclick to display each click incrementally
+
+2. Add event listener to save each "batch" of clicks 
+
+3. Render the number saved in each "batch" sequentially 
+
+4. Set the counter back to zero when save button is hit 
+
+
